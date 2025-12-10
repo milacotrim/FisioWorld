@@ -22,12 +22,12 @@ body {
    CAPA
    =============================== */
 .capa {
-  background-image: url('capa.jpg');
+  b.capa {
+  background-image: url('../img/capa.jpg'); /* correto para páginas dentro de /pages */
   background-size: cover;
   background-position: center;
   height: 300px;
 }
-
 
 /* ===============================
    MENU PRINCIPAL
@@ -522,4 +522,5 @@ footer p {
   max-width: 800px;
   margin: 0 auto 50px auto;
 }
+
 

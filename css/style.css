@@ -1,0 +1,523 @@
+/* ===============================
+   RESET
+   =============================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===============================
+   BODY
+   =============================== */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ===============================
+   CAPA
+   =============================== */
+.capa {
+  background-image: url('../img/capa.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+/* ===============================
+   MENU PRINCIPAL
+   =============================== */
+.menu-abaixo {
+  background-color: #2a9d8f;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.menu-abaixo ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.menu-abaixo ul li {
+  margin: 0 15px;
+}
+
+.menu-abaixo ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 0;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.menu-abaixo ul li a:hover {
+  color: #f0c14b;
+}
+
+
+/* ===============================
+   SEÇÕES
+   =============================== */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+section h3 {
+  color: #2a9d8f;
+  margin-bottom: 15px;
+}
+
+section p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* ===============================
+   BOX DE DESTAQUE
+   =============================== */
+.box {
+  background-color: #d0f0ef;
+  padding: 15px 20px;
+  border-left: 5px solid #2a9d8f;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* ===============================
+   ATENDENTE
+   =============================== */
+.atendimento-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.foto-atendente {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.mensagem-atendente {
+  flex: 1;
+  min-width: 200px;
+}
+
+/* LISTA DE OPÇÕES */
+#contato .box ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contato .box ul li {
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contato .box ul li:hover {
+  background-color: #21867a;
+}
+
+/* ===============================
+   FORMULÁRIOS
+   =============================== */
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+button {
+  background-color: #2a9d8f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #21867a;
+}
+
+/* ===============================
+   RODAPÉ
+   =============================== */
+  footer {
+  background-image: url('../img/rodape.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  text-align: center;
+  padding: 40px 0;
+  margin-top: 40px;
+  font-size: 0.9em;
+
+  /* escurece o fundo para o texto aparecer melhor */
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: darken;
+}
+
+footer p {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+/* ===============================
+   REDES SOCIAIS
+   =============================== */
+.redes-sociais {
+  margin-top: 20px;
+}
+
+.btn-rede {
+  display: inline-block;
+  background-color: #2a9d8f;
+  color: white;
+  padding: 10px 22px;     /* mais espaço interno */
+  border-radius: 30px;
+  margin: 8px;            /* mais espaço entre botões */
+  font-size: 0.95em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+/* ===============================
+   PRODUTOS (PROMOÇÕES)
+   =============================== */
+.produto {
+  display: inline-block;
+  width: 220px;
+  margin: 15px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+}
+
+.produto img {
+  width: 100%;
+  height: auto;      /* tira a altura fixa */
+  max-height: 180px; /* controla o tamanho máximo */
+  object-fit: contain; /* garante que não corte */
+}
+
+
+.produto p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2a9d8f;
+}
+
+.mais-produtos {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.btn-mais {
+  background-color: #2a9d8f;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+.btn-mais:hover {
+  background-color: #21867a;
+  transform: scale(1.05);
+}
+
+/* ===== SLIDER FISIOWORLD COM SETAS DOURADAS ===== */
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 700px;
+  height: 300px; /* altura fixa para o slider */
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.slide {
+  width: 100%;
+  height: 100%; /* faz a imagem ocupar todo o slider */
+  object-fit: cover; /* mantém proporção da imagem */
+  display: none; /* esconde todos os slides inicialmente */
+}
+
+.slide.ativo {
+  display: block;
+}
+
+.seta {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(212, 175, 55, 0.8); /* dourado translúcido */
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px; /* tamanho fixo para não virar “fita” */
+  text-align: center;
+  line-height: 40px; /* centraliza o símbolo da seta */
+  font-size: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10; /* fica sobre a imagem */
+  padding: 0; /* remove padding extra */
+}
+
+.seta:hover {
+  background-color: rgba(212, 175, 55, 1); /* dourado sólido ao passar o mouse */
+}
+
+.seta.esquerda {
+  left: 10px;
+}
+
+.seta.direita {
+  right: 10px;
+}
+
+/* RESPONSIDADE */
+@media screen and (max-width: 600px) {
+  .seta {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+}
+
+/* ===============================
+   CLIENTES
+   =============================== */
+.cliente-destaque img {
+  width: 850px;   /* largura */
+  height: 350px;  /* altura */
+  object-fit: cover; /* mantém proporção e corta excesso se necessário */
+  border: 3px solid #2a9d8f; /* borda verde FisioWorld */
+  border-radius: 0; /* garante que fique retangular */
+}
+
+/* ===============================
+   CADASTRO
+   =============================== */
+.cadastro img {
+  display: block;    /* remove espaço extra abaixo da imagem */
+  width: 300px;      /* largura desejada */
+  height: 250px;     /* altura desejada */
+  object-fit: cover; /* mantém proporção */
+  border-radius: 0;  /* retangular */
+  margin: 0 auto;    /* centraliza horizontalmente */
+}
+
+
+/* ===============================
+   CARRINHO
+   =============================== */
+.menu .carrinho {
+  margin-left: auto; /* empurra para o canto direito */
+}
+
+.menu .carrinho svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.menu .carrinho svg:hover {
+  transform: scale(1.2); /* efeito de destaque ao passar o mouse */
+}
+
+.carrinho-virtual {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+.carrinho-virtual h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.item-carrinho img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item-carrinho .detalhes p {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.item-carrinho .detalhes span {
+  color: #2a9d8f;
+  font-weight: bold;
+}
+
+
+/* MENU */
+.menu {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #2a9d8f;
+  color: white;
+}
+
+.menu .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.menu .menu-links {
+  display: flex;
+  gap: 25px;
+  margin-left: 50px;
+}
+
+.menu .menu-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 5px 10px;
+  transition: background 0.3s;
+}
+
+.menu .menu-links a:hover {
+  background-color: #ffffff33;
+  border-radius: 5px;
+}
+
+.menu .carrinho {
+  margin-left: auto;
+}
+
+.menu .carrinho svg {
+  width: 28px;
+  height: 28px;
+  fill: white;
+  cursor: pointer;
+}
+
+/* ===============================
+   PRODUTO DETALHES
+   =============================== */
+.produto-detalhe {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px;
+  align-items: center;
+}
+
+.produto-imagem img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.produto-info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.produto-info p {
+  font-size: 16px;   /* letra menor para descrição */
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.produto-info .preco {
+  display: block;
+  font-size: 18px;
+  color: #2a9d8f;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.adicionar-carrinho {
+  padding: 10px 20px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.adicionar-carrinho:hover {
+  background-color: #21867a;
+}
+
+
+/* =====================
+   PAGAMENTO
+   ===================== */
+
+.titulo-pagamento {
+  font-size: 32px;
+  color: #2a9d8f;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-weight: bold;
+}
+
+.texto-pagamento {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
